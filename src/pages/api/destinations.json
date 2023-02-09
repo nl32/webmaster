@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "name": "Around the globe",
+    "description": "Take a trip into outerspace and see the world like never before.",
+    "features": [
+      {
+        "name": "A killer view",
+        "description": "view all the wonders of the world, from 250 miles above"
+      }
+    ],
+    "length": 31,
+    "cost": 50000
+  },
+  {
+    "id": 1,
+    "name": "The Moon Walk",
+    "description": "Become one of the very few lucky individuals to have stepped onto the moon",
+    "length": 255,
+    "cost": 500000
+  },
+  {
+    "id": 2,
+    "name": "Space walk",
+    "description": "Take a step out into space.",
+    "length": 3,
+    "cost": 5000000
+  },
+  {
+    "id": 3,
+    "name": "Low Orbit Joyride",
+    "description": "A shorter trip",
+    "length": 7,
+    "cost": 5000
+  }
+]
