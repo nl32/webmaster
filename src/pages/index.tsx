@@ -2,7 +2,6 @@ import { type NextPage } from "next";
 import Link from "next/link";
 import { type ReactElement, useEffect, useRef, useState } from "react";
 import Nav from "../components/nav";
-import Num from "../components/numAnim";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { url } from "inspector";
 
