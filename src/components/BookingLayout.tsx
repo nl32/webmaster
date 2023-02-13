@@ -163,6 +163,7 @@ export const DestCard = ({
   destination: Destination;
   selected?: boolean;
 }) => {
+  const x = DestinationImg[destination.id ?? 0];
   return (
     <div
       className={`m-2 ${
@@ -172,7 +173,7 @@ export const DestCard = ({
       <Link href={`/booking/${destination.id}`} replace={true}>
         <div className="flex flex-row rounded-md p-1">
           <div className="place-content-center border-r-2 p-1">
-            {DestinationImg[destination.id]!() ?? null}
+            {x ? x() : null}
           </div>
           <div>
             <h1 className="px-1 font-bold text-white">{destination.name}</h1>
