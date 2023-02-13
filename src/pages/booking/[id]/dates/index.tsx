@@ -23,7 +23,7 @@ const Page = () => {
             <div className="w-fit">
               <DatePicker
                 selected={trainingDate}
-                onChange={(date) => setTrainingDate(date)}
+                onChange={(date) => (date ? setTrainingDate(date) : null)}
               />
             </div>
             Through{" "}
@@ -38,13 +38,13 @@ const Page = () => {
           <div className="w-fit">
             <DatePicker
               selected={launchDate}
-              onChange={(date) => setLaunchDate(date)}
+              onChange={(date) => (date ? setLaunchDate(date) : null)}
             />
           </div>
           Through{" "}
           {new Date(
             launchDate.getTime() +
-              Destinations[id]?.length * 24 * 60 * 60 * 1000
+              (Destinations[id]?.length ?? 0) * 24 * 60 * 60 * 1000
           ).toLocaleDateString()}
         </div>
       </div>
