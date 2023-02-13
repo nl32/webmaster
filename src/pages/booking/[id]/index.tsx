@@ -1,4 +1,4 @@
-import BookingLayout from "../../../components/BookingLayout";
+import BookingLayout, { Destination } from "../../../components/BookingLayout";
 import { nextPageWithLayout } from "../../_app";
 import Destinations from "../../api/destinations.json";
 import DestPage from "../../../components/DestPage";
@@ -13,7 +13,7 @@ const Page: nextPageWithLayout = () => {
   }
   return (
     <>
-      <DestPage destination={destination!} />
+      <DestPage destination={destination! as Destination} />
     </>
   );
 };
