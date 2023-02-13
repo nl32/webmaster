@@ -27,7 +27,10 @@ const BookingLayout = (page: ReactElement) => {
           </div>
           {Destinations.map((dest) => (
             <div key={dest.id} className={expanded ? "contents" : "hidden"}>
-              <DestCard destination={dest} selected={id === dest.id} />
+              <DestCard
+                destination={dest as Destination}
+                selected={id === dest.id}
+              />
             </div>
           ))}
         </div>
@@ -50,6 +53,7 @@ export type Destination = {
   features?: Array<{ name: string; description: string }>;
   length: number;
   cost: number;
+  available: boolean;
 };
 const DestCard = ({
   destination,
