@@ -5,7 +5,7 @@ const References: NextPage = () => {
   return (
     <div>
       <Nav />
-      <div className="h-screen bg-slate-700 text-white">
+      <div className="h-full min-h-screen w-screen min-w-full bg-slate-700 text-white">
         <div>
           <h2 className="bg-gradient-to-br from-white to-slate-400 bg-clip-text text-2xl text-transparent">
             Media Sources
