@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       animation: {
         typing: "typing 3s 1 steps(27)",
-        bgshift: "bgshift 300s linear infinite",
+        bgshift: "bgshift 60s linear infinite",
       },
       keyframes: {
         typing: {

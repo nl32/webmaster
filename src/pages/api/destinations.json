@@ -2,14 +2,15 @@
   {
     "id": 0,
     "name": "Around the globe",
-    "description": "Take a trip into outerspace and see the world like never before. Stay aboard the ISS and get a peek at what life for astronauts is really like.",
+    "description": "Take a trip into outerspace and see the world like never before. Stay aboard the ISS for 2 weeks and get a peek at what life for astronauts is really like.",
     "features": [
       {
         "name": "A killer view",
         "description": "view all the wonders of the world, from 250 miles above"
       },
       {
-        "name": "Authentic Astronaut Living"
+        "name": "Authentic Astronaut Living",
+        "description": "Eat, Sleep, and Breathe in space, experience life in space and get a taste of the future of the human race."
       }
     ],
     "length": 14,
@@ -19,18 +20,34 @@
   {
     "id": 1,
     "name": "Low Orbit Joyride",
-    "description": "Cross over the Line and see the curvature of the earth, get an amazing experience at an amazing price point",
+    "description": "Cross over the Kármán Line and see the curvature of the earth. On your 12 minute journey you will be able to float around above the earth and get a magnificent view.",
     "length": 1,
     "cost": 50000,
-    "available": true
+    "available": true,
+    "features": [
+      {
+        "name": "Life changing, at a fraction of the price",
+        "description": "See the world like very few have without spending a fortune."
+      },
+      {
+        "name": "Our Quickest Trip",
+        "description": "Want to see space but also be back home in time for family dinner? The Low Orbit Joyride let's you see all the beauties of space and get you back to your life the next day."
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Space walk",
-    "description": "Take a step out into space.",
+    "description": "Take a step out into space. Travel into earth orbit and get to experience a space walk.",
     "length": 2,
     "cost": 200000,
-    "available": true
+    "available": true,
+    "features": [
+      {
+        "name": "Leave the ship",
+        "description": "Float through space, safely tethered to your vessel. Let the vastness of space overwhelm you."
+      }
+    ]
   },
   {
     "id": 3,
