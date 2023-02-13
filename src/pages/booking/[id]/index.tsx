@@ -1,7 +1,7 @@
-import BookingLayout from "../../components/BookingLayout";
-import { nextPageWithLayout } from "../_app";
-import Destinations from "../api/destinations.json";
-import DestPage from "../../components/DestPage";
+import BookingLayout from "../../../components/BookingLayout";
+import { nextPageWithLayout } from "../../_app";
+import Destinations from "../../api/destinations.json";
+import DestPage from "../../../components/DestPage";
 import { useRouter } from "next/router";
 
 const Page: nextPageWithLayout = () => {

@@ -2,35 +2,42 @@
   {
     "id": 0,
     "name": "Around the globe",
-    "description": "Take a trip into outerspace and see the world like never before.",
+    "description": "Take a trip into outerspace and see the world like never before. Stay aboard the ISS and get a peek at what life for astronauts is really like.",
     "features": [
       {
         "name": "A killer view",
         "description": "view all the wonders of the world, from 250 miles above"
+      },
+      {
+        "name": "Authentic Astronaut Living"
       }
     ],
-    "length": 31,
-    "cost": 50000
+    "length": 14,
+    "cost": 5000000,
+    "available": true
   },
   {
     "id": 1,
-    "name": "The Moon Walk",
-    "description": "Become one of the very few lucky individuals to have stepped onto the moon",
-    "length": 255,
-    "cost": 500000
+    "name": "Low Orbit Joyride",
+    "description": "Cross over the Line and see the curvature of the earth, get an amazing experience at an amazing price point",
+    "length": 1,
+    "cost": 50000,
+    "available": true
   },
   {
     "id": 2,
     "name": "Space walk",
     "description": "Take a step out into space.",
-    "length": 3,
-    "cost": 5000000
+    "length": 2,
+    "cost": 200000,
+    "available": true
   },
   {
     "id": 3,
-    "name": "Low Orbit Joyride",
-    "description": "A shorter trip",
-    "length": 7,
-    "cost": 5000
+    "name": "One Small Step",
+    "description": "Become one of the very few lucky individuals to have stepped onto the moon. Coming soon in 2025.",
+    "length": 10,
+    "cost": 10000000,
+    "available": false
   }
 ]

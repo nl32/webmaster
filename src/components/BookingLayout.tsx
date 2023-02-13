@@ -5,8 +5,7 @@ import Destinations from "../pages/api/destinations.json";
 
 const BookingLayout = (page: ReactElement) => {
   const router = useRouter();
-  const id = Number.parseInt(router.query.id as string) ?? -1;
-
+  const id = Number.parseInt(router.query.id as string);
   const [expanded, setExpanded] = useState(true);
 
   return (
@@ -34,15 +33,13 @@ const BookingLayout = (page: ReactElement) => {
         </div>
         <div className="h-full w-full">{page}</div>
       </div>
-      <div className="sticky bottom-0 bg-gradient-to-bl from-white to-gray-300">
-        <div className="flex flex-row">
-          <div>
-            <Link href="/">Back</Link>
-          </div>
-          <div>Steps Completed</div>
-          <button className="ml-auto">Proceed to next step</button>
+      {!isNaN(id) && Destinations[id]?.available ? (
+        <div className="absolute bottom-10 flex w-full flex-row justify-center">
+          <button className=" rounded-md bg-gradient-to-r from-green-500 to-blue-400 p-2 text-xl text-white drop-shadow-xl transition-transform hover:scale-125 hover:shadow-green-500">
+            <Link href={`/booking/${id}/dates/`}>Book this trip</Link>
+          </button>
         </div>
-      </div>
+      ) : null}
     </>
   );
 };
@@ -67,7 +64,7 @@ const DestCard = ({
         selected ? "bg-slate-600" : "bg-slate-500"
       } hover:bg-slate-600 active:bg-slate-700`}
     >
-      <Link href={`/booking/${destination.id}`}>
+      <Link href={`/booking/${destination.id}`} replace={true}>
         <div className="flex flex-row rounded-md p-1">
           <div className="border-r-2">image</div>
           <div>
