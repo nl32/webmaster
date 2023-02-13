@@ -64,7 +64,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="bg-slate-700">
             <h2 className="mb-2 text-xl text-white">Contact Info</h2>
             <form
               onSubmit={(e) => {
@@ -72,13 +72,13 @@ const Page = () => {
                 router.push("/booking/confirmation");
               }}
             >
-              <div className="flex text-white max-sm:flex-col sm:flex-row">
+              <div className="flex h-full w-full bg-slate-700 text-white max-sm:flex-col sm:flex-row">
                 <div className="mr-4 rounded-md bg-gradient-to-br from-purple-600 to-purple-700 p-2 pt-0 drop-shadow-xl">
                   <label className="text-white">First Name:</label>
                   <br />
                   <input className="text-black" type={"text"}></input>
                 </div>
-                <div className="mr-4 rounded-md bg-gradient-to-br from-purple-600 to-purple-700 p-2 pt-0 drop-shadow-xl">
+                <div className="mr-4 rounded-md bg-gradient-to-br from-purple-600 to-purple-700 p-2 pt-0 drop-shadow-xl max-sm:mt-2">
                   <label>Last Name:</label> <br />
                   <input className="text-black" type={"text"} />
                 </div>
