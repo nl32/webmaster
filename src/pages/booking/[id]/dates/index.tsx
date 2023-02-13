@@ -72,7 +72,7 @@ const Page = () => {
                 router.push("/booking/confirmation");
               }}
             >
-              <div className="flex flex-row text-white">
+              <div className="flex text-white max-sm:flex-col sm:flex-row">
                 <div className="mr-4 rounded-md bg-gradient-to-br from-purple-600 to-purple-700 p-2 pt-0 drop-shadow-xl">
                   <label className="text-white">First Name:</label>
                   <br />

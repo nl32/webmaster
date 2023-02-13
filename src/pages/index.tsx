@@ -53,9 +53,9 @@ const Home: NextPage = () => {
                       A premium and unique experience
                     </h1>
                     <p>
-                      How many can say they have been to outerspace? Our program
-                      offers the opportunity of a lifetime, a chance to be one
-                      of the first to journey into the final frontier.
+                      How many can say they have been to outer space? Our
+                      program offers the opportunity of a lifetime, a chance to
+                      be one of the first to journey into the final frontier.
                     </p>
                   </div>
                 </Card>
