@@ -10,7 +10,10 @@ const Nav = () => {
         <StyledLink href="/booking/" name="Book a Trip" />
       </div>
       <div className="ml-auto">
-        <StyledLink href="/references/" name="about" />
+        <StyledLink href="/team/" name="Team" />
+      </div>
+      <div className="mx-2">
+        <StyledLink href="/references/" name="Attributions" />
       </div>
     </div>
   );
